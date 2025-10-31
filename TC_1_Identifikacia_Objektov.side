@@ -1,0 +1,142 @@
+{
+  "id": "7f6a8b92-98a7-4fc6-a295-49c430b47029",
+  "version": "2.0",
+  "name": "Test_Identifikacia_Objektov",
+  "url": "https://www.elektroviagroup.sk/",
+  "tests": [{
+    "id": "22c72c95-8ce3-4954-9883-1b79ff8476f0",
+    "name": "TC_1_Identifikacia_textov",
+    "commands": [{
+      "id": "6efb7e27-9dac-42e4-a9fe-ed4dcda73a49",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.elektroviagroup.sk/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d228e3ac-2301-4d0e-b2a9-a4bd565eb2ac",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "780x740",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a4b9891-9687-4003-83f6-1913e6cb0a66",
+      "comment": "",
+      "command": "click",
+      "target": "css=.has-border-color",
+      "targets": [
+        ["css=.has-border-color", "css:finder"],
+        ["xpath=//div[@id='reviews']/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Kompletné elektroinštalácie pre rodinné domy – novostavby aj rekonštrukcie')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "531b322d-f578-41c3-84bf-5a0a610cbc4d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.has-border-color",
+      "targets": [
+        ["css=.has-border-color", "css:finder"],
+        ["xpath=//div[@id='reviews']/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Kompletné elektroinštalácie pre rodinné domy – novostavby aj rekonštrukcie')]", "xpath:innerText"]
+      ],
+      "value": "Kompletné elektroinštalácie pre rodinné domy – novostavby aj rekonštrukcie"
+    }, {
+      "id": "f51f08ab-d33c-4377-b3e7-db1940b5660d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=strong > strong",
+      "targets": [
+        ["css=strong > strong", "css:finder"],
+        ["xpath=//div[@id='reviews']/div[4]/div[2]/a/strong/strong", "xpath:idRelative"],
+        ["xpath=//strong/strong", "xpath:position"]
+      ],
+      "value": "Rezervovať obhliadku"
+    }]
+  }, {
+    "id": "0124dea1-5bec-4e23-a285-36404c98fdb6",
+    "name": "TC_2_Identifikacia_Poli",
+    "commands": [{
+      "id": "ec0f6294-93ed-4b19-8251-a1c3299bf49c",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.elektroviagroup.sk/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b91ee9de-a780-47bd-b848-d3a617be1462",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "780x740",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "539ed26b-4329-4cd6-8988-9a5ad96ae454",
+      "comment": "",
+      "command": "verifyEditable",
+      "target": "id=wpforms-37-field_1",
+      "targets": [
+        ["id=wpforms-37-field_1", "id"],
+        ["name=wpforms[fields][1][first]", "name"],
+        ["css=#wpforms-37-field_1", "css:finder"],
+        ["xpath=//input[@id='wpforms-37-field_1']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-37-field_1-container']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "190c2161-2296-43d7-8f14-8e6da87a9779",
+      "comment": "",
+      "command": "click",
+      "target": "id=wpforms-37-field_3",
+      "targets": [
+        ["id=wpforms-37-field_3", "id"],
+        ["name=wpforms[fields][3]", "name"],
+        ["css=#wpforms-37-field_3", "css:finder"],
+        ["xpath=//textarea[@id='wpforms-37-field_3']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-37-field_3-container']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f1b866f-ecfc-4af5-bbbd-618d0b356eed",
+      "comment": "",
+      "command": "type",
+      "target": "id=wpforms-37-field_3",
+      "targets": [
+        ["id=wpforms-37-field_3", "id"],
+        ["name=wpforms[fields][3]", "name"],
+        ["css=#wpforms-37-field_3", "css:finder"],
+        ["xpath=//textarea[@id='wpforms-37-field_3']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-37-field_3-container']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Ahoj toto je test"
+    }, {
+      "id": "1bc2f7c0-586c-4c6b-9b9d-dce5516d6c3b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.wp-block-column:nth-child(3) .wp-image-55",
+      "targets": [
+        ["css=.wp-block-column:nth-child(3) .wp-image-55", "css:finder"],
+        ["xpath=(//img[contains(@src,'https://www.elektroviagroup.sk/wp-content/uploads/2025/10/el1.png')])[9]", "xpath:img"],
+        ["xpath=//div[@id='najcastejsiekladeneotazky']/div/div[3]/figure/img", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div[3]/figure/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7031ffb7-7bc5-4f06-a99d-919c112e269f",
+    "name": "TS_2",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["22c72c95-8ce3-4954-9883-1b79ff8476f0"]
+  }],
+  "urls": ["https://www.elektroviagroup.sk/"],
+  "plugins": []
+}

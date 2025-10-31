@@ -1,0 +1,324 @@
+{
+  "id": "ef9ba2f7-790f-4613-8cea-2aa2024ef72f",
+  "version": "2.0",
+  "name": "EL",
+  "url": "https://www.elektroviagroup.sk",
+  "tests": [{
+    "id": "6b69a9d2-19e2-41e5-9576-4d343bc2e4d3",
+    "name": "TC_1_Nacitavanie_Stranky",
+    "commands": [{
+      "id": "e6159b79-fd99-4613-95fe-0bc62441b8be",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "89aa708e-5b19-4761-b144-f16bfc6812a9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x775",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f2c975d-e028-4dfd-b630-34c3a817f2f7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ast-primary-header-bar > .site-primary-header-wrap .custom-logo",
+      "targets": [
+        ["css=.ast-primary-header-bar > .site-primary-header-wrap .custom-logo", "css:finder"],
+        ["xpath=//img[@alt='Elektroviagroup']", "xpath:img"],
+        ["xpath=//div[@id='ast-desktop-header']/div/div/div/div/div/div/div/span/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9a946d7-08af-492a-b7d9-d5cdf08aa2ff",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Domov",
+      "targets": [
+        ["linkText=Domov", "linkText"],
+        ["css=#menu-item-12 > .menu-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Domov')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-12']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.elektroviagroup.sk/')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Domov')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8935706a-2bff-409e-ae2a-60ecb9e612fd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Čo pre vás urobíme",
+      "targets": [
+        ["linkText=Čo pre vás urobíme", "linkText"],
+        ["css=#menu-item-80 > .menu-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Čo pre vás urobíme')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-80']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#coprevasurobime')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Čo pre vás urobíme')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "14deabe0-5145-459b-9aab-d2afee14423e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,662.5)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df33fbd5-d3a9-43df-ac49-6c5f50102a36",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Čo pre vás urobíme",
+      "targets": [
+        ["linkText=Čo pre vás urobíme", "linkText"],
+        ["css=#menu-item-80 > .menu-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Čo pre vás urobíme')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-80']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#coprevasurobime')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Čo pre vás urobíme')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a04414ff-e8bf-4458-af7f-83edf0e24de8",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,666)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9bf4b7e5-06c9-4b0f-a4c6-69cb7551715a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Naše služby",
+      "targets": [
+        ["linkText=Naše služby", "linkText"],
+        ["css=#menu-item-13 > .menu-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Naše služby')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-13']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#nasesluzby')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Naše služby')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4836b447-29f0-4cce-8c61-3f4e8c8c1fd1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Kontaktný formulár",
+      "targets": [
+        ["linkText=Kontaktný formulár", "linkText"],
+        ["css=#menu-item-15 > .menu-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Kontaktný formulár')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-15']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#kontaktnyformular')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Kontaktný formulár')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "32ff2bcc-57d0-4bed-adf9-6a32b5bef267",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Najčastejšie kladené otázky",
+      "targets": [
+        ["linkText=Najčastejšie kladené otázky", "linkText"],
+        ["css=#menu-item-16 > .menu-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Najčastejšie kladené otázky')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-16']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#najcastejsiekladeneotazky')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Najčastejšie kladené otázky')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9b0a88d4-53b2-485a-977c-b52fcd0f1d23",
+    "name": "TC_2_Kontaktny_Formular",
+    "commands": [{
+      "id": "a6538b4b-307a-4d1e-add5-ffd1d1febc75",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "73ac3660-ee22-48c4-bdc2-82d5338fa6b4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x775",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39932257-8b67-43c8-be85-340e48d11bac",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Kontaktný formulár",
+      "targets": [
+        ["linkText=Kontaktný formulár", "linkText"],
+        ["css=#menu-item-15 > .menu-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Kontaktný formulár')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-15']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#kontaktnyformular')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Kontaktný formulár')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ebe860b-e174-4e86-b9a5-cd5e71ab9818",
+      "comment": "",
+      "command": "click",
+      "target": "id=wpforms-37-field_1",
+      "targets": [
+        ["id=wpforms-37-field_1", "id"],
+        ["name=wpforms[fields][1][first]", "name"],
+        ["css=#wpforms-37-field_1", "css:finder"],
+        ["xpath=//input[@id='wpforms-37-field_1']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-37-field_1-container']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "414be9db-e10c-4003-b307-c805acd6649d",
+      "comment": "",
+      "command": "type",
+      "target": "id=wpforms-37-field_1",
+      "targets": [
+        ["id=wpforms-37-field_1", "id"],
+        ["name=wpforms[fields][1][first]", "name"],
+        ["css=#wpforms-37-field_1", "css:finder"],
+        ["xpath=//input[@id='wpforms-37-field_1']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-37-field_1-container']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Fero"
+    }, {
+      "id": "afe984ba-88cc-4f70-bd18-2f897a0537ab",
+      "comment": "",
+      "command": "type",
+      "target": "id=wpforms-37-field_1-last",
+      "targets": [
+        ["id=wpforms-37-field_1-last", "id"],
+        ["name=wpforms[fields][1][last]", "name"],
+        ["css=#wpforms-37-field_1-last", "css:finder"],
+        ["xpath=//input[@id='wpforms-37-field_1-last']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-37-field_1-container']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Bumba"
+    }, {
+      "id": "6b0ad33a-31b5-4d5c-b960-0161a79c2f3b",
+      "comment": "",
+      "command": "type",
+      "target": "id=wpforms-37-field_2",
+      "targets": [
+        ["id=wpforms-37-field_2", "id"],
+        ["name=wpforms[fields][2]", "name"],
+        ["css=#wpforms-37-field_2", "css:finder"],
+        ["xpath=//input[@id='wpforms-37-field_2']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-37-field_2-container']/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "test_mail"
+    }, {
+      "id": "6b9e9179-2808-4fc5-8a71-054f0ace054c",
+      "comment": "",
+      "command": "click",
+      "target": "id=wpforms-37-field_2",
+      "targets": [
+        ["id=wpforms-37-field_2", "id"],
+        ["name=wpforms[fields][2]", "name"],
+        ["css=#wpforms-37-field_2", "css:finder"],
+        ["xpath=//input[@id='wpforms-37-field_2']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-37-field_2-container']/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2cfc929-163b-491f-97cc-d69c45d06af2",
+      "comment": "",
+      "command": "type",
+      "target": "id=wpforms-37-field_2",
+      "targets": [
+        ["id=wpforms-37-field_2", "id"],
+        ["name=wpforms[fields][2]", "name"],
+        ["css=#wpforms-37-field_2", "css:finder"],
+        ["xpath=//input[@id='wpforms-37-field_2']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-37-field_2-container']/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "test_mail@mail.com"
+    }, {
+      "id": "e238b58d-1fdb-4ce0-a833-40e3dd4e7bd3",
+      "comment": "",
+      "command": "click",
+      "target": "id=wpforms-37-field_3-container",
+      "targets": [
+        ["id=wpforms-37-field_3-container", "id"],
+        ["css=#wpforms-37-field_3-container", "css:finder"],
+        ["xpath=//div[@id='wpforms-37-field_3-container']", "xpath:attributes"],
+        ["xpath=//form[@id='wpforms-form-37']/div[2]/div[5]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "366f986c-1ece-4ea3-a1fc-663696f064c0",
+      "comment": "",
+      "command": "click",
+      "target": "id=wpforms-37-field_3",
+      "targets": [
+        ["id=wpforms-37-field_3", "id"],
+        ["name=wpforms[fields][3]", "name"],
+        ["css=#wpforms-37-field_3", "css:finder"],
+        ["xpath=//textarea[@id='wpforms-37-field_3']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-37-field_3-container']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45e5e027-7606-471b-94c4-d72eb667a117",
+      "comment": "",
+      "command": "type",
+      "target": "id=wpforms-37-field_3",
+      "targets": [
+        ["id=wpforms-37-field_3", "id"],
+        ["name=wpforms[fields][3]", "name"],
+        ["css=#wpforms-37-field_3", "css:finder"],
+        ["xpath=//textarea[@id='wpforms-37-field_3']", "xpath:attributes"],
+        ["xpath=//div[@id='wpforms-37-field_3-container']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Toto je test"
+    }, {
+      "id": "1c8aa73f-edb6-4539-8703-9dc6552a046b",
+      "comment": "",
+      "command": "click",
+      "target": "id=wpforms-submit-37",
+      "targets": [
+        ["id=wpforms-submit-37", "id"],
+        ["name=wpforms[submit]", "name"],
+        ["css=#wpforms-submit-37", "css:finder"],
+        ["xpath=//button[@id='wpforms-submit-37']", "xpath:attributes"],
+        ["xpath=//form[@id='wpforms-form-37']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Odoslať')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "71ffd1e8-06c1-4fc4-8b71-b38c34fd02dd",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6b69a9d2-19e2-41e5-9576-4d343bc2e4d3"]
+  }],
+  "urls": ["https://www.elektroviagroup.sk/"],
+  "plugins": []
+}

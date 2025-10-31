@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>TC01_Vila_Lampasik_Katalon</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Untitled Test Case</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://vilalampasik.sk/<datalist><option>https://vilalampasik.sk/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=//img[@alt='Vila Lampášik']<datalist><option>xpath=//img[@alt='Vila Lampášik']</option><option>xpath=//div[@id='header']/div/div/div/div/div/a/img</option><option>xpath=//img</option><option>css=img.custom-logo</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=header<datalist><option>id=header</option><option>xpath=//div[@id='header']</option><option>xpath=//header[@id='masthead']/div</option><option>xpath=//div</option><option>css=#header</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=//div[@id='header']/div/div/div/div[2]/div/div/span/i<datalist><option>xpath=//div[@id='header']/div/div/div/div[2]/div/div/span/i</option><option>xpath=//i</option><option>css=i.fas.fa-bars</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Vila Lampášik<datalist><option>link=Vila Lampášik</option><option>xpath=//a[contains(text(),'Vila Lampášik')]</option><option>xpath=//li[@id='menu-item-38']/a</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Ubytovanie'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Wellness'])[1]/preceding::a[2]</option><option>xpath=//*/text()[normalize-space(.)='Vila Lampášik']/parent::*</option><option>xpath=//a[contains(@href, 'https://vilalampasik.sk/?page_id=25')]</option><option>xpath=//li/a</option><option>css=#menu-item-38 &gt; a</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Search'])[1]/following::h1[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Search'])[1]/following::h1[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='VOP'])[1]/following::h1[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Vila Lampášik sa nachádza v jednom z najznámejších stredísk – Donovaly'])[1]/preceding::h1[1]</option><option>xpath=//h1</option><option>css=h1</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Search'])[1]/following::h1[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Search'])[1]/following::h1[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='VOP'])[1]/following::h1[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Vila Lampášik sa nachádza v jednom z najznámejších stredísk – Donovaly'])[1]/preceding::h1[1]</option><option>xpath=//h1</option><option>css=h1</option></datalist></td><td></td>
+</tr>
+<tr><td>doubleClick</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Search'])[1]/following::h1[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Search'])[1]/following::h1[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='VOP'])[1]/following::h1[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Vila Lampášik sa nachádza v jednom z najznámejších stredísk – Donovaly'])[1]/preceding::h1[1]</option><option>xpath=//h1</option><option>css=h1</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Search'])[1]/following::h1[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Search'])[1]/following::h1[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='VOP'])[1]/following::h1[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Vila Lampášik sa nachádza v jednom z najznámejších stredísk – Donovaly'])[1]/preceding::h1[1]</option><option>xpath=//h1</option><option>css=h1</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyTitle</td><td>Vila Lampášik – Vila Lampášik<datalist><option>Vila Lampášik – Vila Lampášik</option></datalist></td><td></td>
+</tr>
+<tr><td>echo</td><td>xpath=//div[@id='carouselExampleIndicators']/div[2]/a[2]/span/i<datalist><option>xpath=//div[@id='carouselExampleIndicators']/div[2]/a[2]/span/i</option><option>xpath=//a[2]/span/i</option><option>css=i.fas.fa-chevron-right</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=//div[@id='carouselExampleIndicators']/div[2]/a[2]/span/i<datalist><option>xpath=//div[@id='carouselExampleIndicators']/div[2]/a[2]/span/i</option><option>xpath=//a[2]/span/i</option><option>css=i.fas.fa-chevron-right</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForElementNotPresent</td><td>xpath=//img[@alt='1']<datalist><option>xpath=//img[@alt='1']</option><option>xpath=//div[@id='carouselExampleIndicators']/div/div/img</option><option>xpath=//div/img</option><option>css=img.w-100</option></datalist></td><td></td>
+</tr>
+<tr><td>waitForElementPresent</td><td>xpath=//div[@id='carouselExampleIndicators']/div[2]/a[2]/span/i<datalist><option>xpath=//div[@id='carouselExampleIndicators']/div[2]/a[2]/span/i</option><option>xpath=//a[2]/span/i</option><option>css=i.fas.fa-chevron-right</option></datalist></td><td></td>
+</tr>
+<tr><td>selectFrame</td><td>index=0<datalist><option>index=0</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=//div[@id='mapDiv']/div/div[3]/div/div[2]<datalist><option>xpath=//div[@id='mapDiv']/div/div[3]/div/div[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Prejsť nadol o&amp;nbsp;75&amp;nbsp;%'])[1]/following::div[30]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Page Down'])[1]/following::div[30]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Zobraziť väčšiu mapu'])[1]/preceding::div[8]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Klávesové skratky'])[1]/preceding::div[35]</option><option>xpath=//div[3]/div/div[2]</option></datalist></td><td></td>
+</tr>
+<tr><td>selectWindow</td><td>win_ser_1<datalist><option>win_ser_1</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

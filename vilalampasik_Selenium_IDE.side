@@ -1,0 +1,140 @@
+{
+  "id": "6b6f55c3-bd2f-4560-a63f-dbc9bc8624a1",
+  "version": "2.0",
+  "name": "vilalampasik",
+  "url": "https://vilalampasik.sk",
+  "tests": [{
+    "id": "e586befe-6603-4ea6-b900-d3bebc7ff8e9",
+    "name": "TC_vilalampasik.sk",
+    "commands": [{
+      "id": "dbc3dc3e-5345-4e42-880f-46cf0cd546c3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf93e011-fa59-4a1d-b4fb-be5dcdfbef42",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x775",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b23b396-8966-41bf-a432-61ed5349ff80",
+      "comment": "",
+      "command": "click",
+      "target": "css=.custom-logo",
+      "targets": [
+        ["css=.custom-logo", "css:finder"],
+        ["xpath=//img[@alt='Vila Lampášik']", "xpath:img"],
+        ["xpath=//div[@id='header']/div/div/div/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c418fe5e-d975-4364-b74d-b99249115b95",
+      "comment": "",
+      "command": "click",
+      "target": "css=a[href*=\"lampasik\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4622a961-ab3c-41f9-8ed0-4cb1a8bd1945",
+      "comment": "",
+      "command": "click",
+      "target": "css=.custom-logo",
+      "targets": [
+        ["css=.custom-logo", "css:finder"],
+        ["xpath=//img[@alt='Vila Lampášik']", "xpath:img"],
+        ["xpath=//div[@id='header']/div/div/div/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69ba0a5b-cade-412e-8317-224c30f679ad",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-chevron-right",
+      "targets": [
+        ["css=.fa-chevron-right", "css:finder"],
+        ["xpath=//div[@id='carouselExampleIndicators']/div[2]/a[2]/span/i", "xpath:idRelative"],
+        ["xpath=//a[2]/span/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7bd238e-2606-4c95-85a8-a6679dc9ff68",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-chevron-right",
+      "targets": [
+        ["css=.fa-chevron-right", "css:finder"],
+        ["xpath=//div[@id='carouselExampleIndicators']/div[2]/a[2]/span/i", "xpath:idRelative"],
+        ["xpath=//a[2]/span/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ca1cd54-4df0-49ac-af10-8558e3c4ca1f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-chevron-right",
+      "targets": [
+        ["css=.fa-chevron-right", "css:finder"],
+        ["xpath=//div[@id='carouselExampleIndicators']/div[2]/a[2]/span/i", "xpath:idRelative"],
+        ["xpath=//a[2]/span/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1b6ee92-570f-46df-b1ec-d6b2f66d5c50",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-chevron-right",
+      "targets": [
+        ["css=.fa-chevron-right", "css:finder"],
+        ["xpath=//div[@id='carouselExampleIndicators']/div[2]/a[2]/span/i", "xpath:idRelative"],
+        ["xpath=//a[2]/span/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1726b1c-1b5a-4ba3-a3da-ac083044344d",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae7c8c3a-2378-4243-91c1-c6dea29e2d91",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1b59398-7037-456d-a90c-1d42a30d4e35",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "win8674 selectWindow",
+      "targets": [],
+      "value": "handle=${win8674}"
+    }, {
+      "id": "415432cd-7495-4867-b808-f5dbb87ea405",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "27581efb-1021-449f-9650-7e2ee6a4d133",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e586befe-6603-4ea6-b900-d3bebc7ff8e9"]
+  }],
+  "urls": ["https://vilalampasik.sk/"],
+  "plugins": []
+}

@@ -1,0 +1,87 @@
+{
+  "id": "a6146f14-847e-4fa9-9439-086ca5162223",
+  "version": "2.0",
+  "name": "AlzaTest",
+  "url": "https://www.alza.sk",
+  "tests": [{
+    "id": "ec51ffc5-f841-48c2-92bb-52b0f2ef8fc3",
+    "name": "UntitledSearchForProduct",
+    "commands": [{
+      "id": "8bd9c332-b118-4468-bc5b-a3fab14b4e5a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78163a5c-4284-4e00-a7f1-36b183804f24",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "912x746",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a2bad8e-711b-401e-bc82-03f40c5730ff",
+      "comment": "",
+      "command": "click",
+      "target": "name=exps",
+      "targets": [
+        ["name=exps", "name"],
+        ["css=.header-alz-53", "css:finder"],
+        ["xpath=//input[@name='exps']", "xpath:attributes"],
+        ["xpath=//div[@id='body3Inner']/div/div/div[2]/div/div/div/header/div[4]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "935508f8-22e6-486a-8bf9-076dd002deda",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header-alz-48",
+      "targets": [
+        ["css=.header-alz-48", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='body3Inner']/div/div/div[2]/div/div/div/header/div[4]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Hľadať')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f4c270a-1d89-467d-8bb7-0cb3e3e7d98b",
+      "comment": "",
+      "command": "type",
+      "target": "name=exps",
+      "targets": [
+        ["name=exps", "name"],
+        ["css=.header-alz-53", "css:finder"],
+        ["xpath=//input[@name='exps']", "xpath:attributes"],
+        ["xpath=//div[@id='body3Inner']/div/div/div[2]/div/div/div/header/div[4]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "iPhone"
+    }, {
+      "id": "ad92bb51-1787-4cac-99ae-0f9e3ebcc321",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//input[@name='exps']",
+      "targets": [
+        ["name=exps", "name"],
+        ["css=.header-alz-53", "css:finder"],
+        ["xpath=//input[@name='exps']", "xpath:attributes"],
+        ["xpath=//div[@id='body3Inner']/div/div/div[2]/div/div/div/header/div[4]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2021f86f-03a0-4bcb-8b2c-f881eb3dd2ef",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ec51ffc5-f841-48c2-92bb-52b0f2ef8fc3"]
+  }],
+  "urls": ["https://www.alza.sk/"],
+  "plugins": []
+}

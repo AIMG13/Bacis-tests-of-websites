@@ -1,0 +1,160 @@
+{
+  "id": "a6146f14-847e-4fa9-9439-086ca5162223",
+  "version": "2.0",
+  "name": "AlzaTest",
+  "url": "https://www.alza.sk",
+  "tests": [{
+    "id": "ec51ffc5-f841-48c2-92bb-52b0f2ef8fc3",
+    "name": "UntitledSearchForProduct",
+    "commands": [{
+      "id": "8bd9c332-b118-4468-bc5b-a3fab14b4e5a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78163a5c-4284-4e00-a7f1-36b183804f24",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "912x746",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a2bad8e-711b-401e-bc82-03f40c5730ff",
+      "comment": "",
+      "command": "click",
+      "target": "name=exps",
+      "targets": [
+        ["name=exps", "name"],
+        ["css=.header-alz-53", "css:finder"],
+        ["xpath=//input[@name='exps']", "xpath:attributes"],
+        ["xpath=//div[@id='body3Inner']/div/div/div[2]/div/div/div/header/div[4]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "935508f8-22e6-486a-8bf9-076dd002deda",
+      "comment": "",
+      "command": "click",
+      "target": "css=.header-alz-48",
+      "targets": [
+        ["css=.header-alz-48", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='body3Inner']/div/div/div[2]/div/div/div/header/div[4]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Hľadať')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f4c270a-1d89-467d-8bb7-0cb3e3e7d98b",
+      "comment": "",
+      "command": "type",
+      "target": "name=exps",
+      "targets": [
+        ["name=exps", "name"],
+        ["css=.header-alz-53", "css:finder"],
+        ["xpath=//input[@name='exps']", "xpath:attributes"],
+        ["xpath=//div[@id='body3Inner']/div/div/div[2]/div/div/div/header/div[4]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "iPhone"
+    }, {
+      "id": "ad92bb51-1787-4cac-99ae-0f9e3ebcc321",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//input[@name='exps']",
+      "targets": [
+        ["name=exps", "name"],
+        ["css=.header-alz-53", "css:finder"],
+        ["xpath=//input[@name='exps']", "xpath:attributes"],
+        ["xpath=//div[@id='body3Inner']/div/div/div[2]/div/div/div/header/div[4]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "5579a3c0-2766-41da-bb9f-6f97bc611568",
+    "name": "Overenie_Produktu",
+    "commands": [{
+      "id": "7fba196e-a3a7-4d41-a296-a01ba22de5fa",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f8ba6da-ca3e-460d-aeb7-b8fb4d46a997",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e19451f1-b08e-41cd-9bbe-ad6a64359da9",
+      "comment": "",
+      "command": "type",
+      "target": "name=exps",
+      "targets": [
+        ["name=exps", "name"],
+        ["css=.header-alz-53", "css:finder"],
+        ["xpath=//input[@name='exps']", "xpath:attributes"],
+        ["xpath=//div[@id='body3Inner']/div/div/div[2]/div/div/div/header/div[4]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "iPhone"
+    }, {
+      "id": "cb98b1f8-fb05-4285-a2c9-f1eec4692e68",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=exps",
+      "targets": [
+        ["name=exps", "name"],
+        ["css=.header-alz-53", "css:finder"],
+        ["xpath=//input[@name='exps']", "xpath:attributes"],
+        ["xpath=//div[@id='body3Inner']/div/div/div[2]/div/div/div/header/div[4]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "e60640ae-da2c-4ebd-9971-1c35c149e47b",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=img12812524",
+      "targets": [
+        ["id=img12812524", "id"],
+        ["css=#img12812524", "css:finder"],
+        ["xpath=//img[@alt='iPhone 16e 128 GB čierny - Mobilný telefón']", "xpath:img"],
+        ["xpath=//img[@id='img12812524']", "xpath:attributes"],
+        ["xpath=//div[@id='boxes']/div/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/a/img", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "99935aa5-b910-477b-af43-3940a698c1a4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.box:nth-child(1) .btnk1",
+      "targets": [
+        ["linkText=Do košíka", "linkText"],
+        ["css=.box:nth-child(1) .btnk1", "css:finder"],
+        ["xpath=//a[contains(text(),'Do košíka')]", "xpath:link"],
+        ["xpath=//div[@id='boxes']/div/div[2]/div/span/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, \"javascript:boxOrder(12812524, null, quantity, 'SPO', 'AlzaOnly', true)\")]", "xpath:href"],
+        ["xpath=//span/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Do košíka')]", "xpath:innerText"]
+      ],
+      "value": "Do košíka"
+    }]
+  }],
+  "suites": [{
+    "id": "2021f86f-03a0-4bcb-8b2c-f881eb3dd2ef",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ec51ffc5-f841-48c2-92bb-52b0f2ef8fc3"]
+  }],
+  "urls": ["https://www.alza.sk/"],
+  "plugins": []
+}

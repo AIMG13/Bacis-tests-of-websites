@@ -1,0 +1,124 @@
+{
+  "id": "45e77143-8bbf-4fba-9d87-2c7857e1f76b",
+  "version": "2.0",
+  "name": "TonkaTest",
+  "url": "/",
+  "tests": [{
+    "id": "fedeea5a-8397-4047-9c64-e235eee63450",
+    "name": "Test_1",
+    "commands": [{
+      "id": "ad5a6d85-4666-4aa6-99f8-12a82bacbd44",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.tonkasmetankova.sk",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ba72417-becb-454e-b2d3-642b7d33e3b5",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "2000"
+    }, {
+      "id": "27832936-7f1d-43b8-a125-1b0557bbb414",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "",
+      "targets": [],
+      "value": "pageTitle"
+    }, {
+      "id": "4af0cb67-1ccd-4104-8ca8-6225cffdce20",
+      "comment": "",
+      "command": "echo",
+      "target": "",
+      "targets": [],
+      "value": "${pageTitle}"
+    }]
+  }, {
+    "id": "e912c300-fac5-489f-aca6-919681d2e541",
+    "name": "Test_2",
+    "commands": [{
+      "id": "78e56fc1-a95c-44e1-9f04-1c4a5f271105",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.tonkasmetankova.sk",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "18b90da7-d7db-409c-962b-402f872bacd5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=O",
+      "targets": [
+        ["linkText=O", "linkText"],
+        ["css=#menu-item-8183 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'O')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-8183']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.tonkasmetankova.sk/o-mne/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'O')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc144a47-c12e-4125-9339-bc39e1e2ab6c",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "linkText=O",
+      "targets": [
+        ["linkText=O", "linkText"],
+        ["css=#menu-item-8183 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'O')]", "xpath:link"],
+        ["xpath=//li[@id='menu-item-8183']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.tonkasmetankova.sk/o-mne/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'O')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "baeb717e-1adc-4796-88b9-94f36fb98f68",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.elementor-element-7cddfe9b .elementor-heading-title",
+      "targets": [
+        ["css=.elementor-element-7cddfe9b .elementor-heading-title", "css:finder"],
+        ["xpath=//div[@id='page']/div/section[2]/div/div/div/section/div/div/div/div/div/h2", "xpath:idRelative"],
+        ["xpath=//section[2]/div/div/div/section/div/div/div/div/div/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'AHOJ, JA SOM TONKA​​​')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "d905eba4-b70c-4839-bc07-a5a8141b7b6d",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.cretive-button-text",
+      "targets": [
+        ["css=.cretive-button-text", "css:finder"],
+        ["xpath=//div[@id='page']/div/section[5]/div/div[2]/div/div[3]/div/div/a/div/span", "xpath:idRelative"],
+        ["xpath=//a/div/span", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "14f58440-aecf-414a-af21-919716b07bbf",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.cretive-button-text",
+      "targets": [
+        ["css=.cretive-button-text", "css:finder"],
+        ["xpath=//div[@id='page']/div/section[5]/div/div[2]/div/div[3]/div/div/a/div/span", "xpath:idRelative"],
+        ["xpath=//a/div/span", "xpath:position"]
+      ],
+      "value": "NAPÍŠTE MI"
+    }]
+  }],
+  "suites": [{
+    "id": "6fe50fe3-18c5-4a23-9f37-06345cb4fc12",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["fedeea5a-8397-4047-9c64-e235eee63450"]
+  }],
+  "urls": ["https://www.tonkasmetankova.sk/"],
+  "plugins": []
+}
